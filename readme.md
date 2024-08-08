@@ -138,5 +138,8 @@ destination. You can access the project files to find this directory by navigati
 `*\TeamCode\src\main\java\org\firstinspires\ftc\teamcode` in your file manager. When you copy the 
 package into that folder, it should appear in Android Studio.
 
+Note: When the package updates in Android Studio, it will begin to throw errors. Ignore this for
+now.
+
 Feel free to start looking through the learningToOpMode package where you'll start learning more
 about the inner-workings of programming your robots.
