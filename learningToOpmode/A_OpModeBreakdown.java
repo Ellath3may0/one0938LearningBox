@@ -27,9 +27,9 @@ Next up is the import statements. This is where you are telling the Java executo
 your class uses. If you notice, the classes being imported use their package location and name to
 find the class and import it.
  */
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.DcMotor;
+import      com.qualcomm.robotcore.eventloop.opmode.Disabled;
+import      com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import      com.qualcomm.robotcore.hardware.DcMotor;
 import      com.qualcomm.robotcore.eventloop.opmode.OpMode;
 //package-->^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|^^^^^^<--Class name
 
