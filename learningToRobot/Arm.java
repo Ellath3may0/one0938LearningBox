@@ -93,6 +93,10 @@ public class Arm
     /*
     PID loops are used most frequently for controlling arms in such a way that they can accurately
     and consistently target a specific position using motion profiling dependent on the constants
-    Kp, Ki, and Kd declared earlier.
+    Kp, Ki, and Kd declared earlier. This method of controller is one of the better options for
+    controlling any appendage that experiences external forces, but it is complicated for newer
+    programmers, and requires calibration.
+
+    Now you can head back over to A_RobotClassBreakdown and continue from line 54.
      */
 }

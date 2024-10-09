@@ -22,7 +22,7 @@ public class mecanumTeleOp extends OpMode
 
     // These are the variables that will store our motors. These specifically use FTCLib's Motor
     // wrapper class which has extra built in tools for controlling the motors like PID controllers.
-    private Motor fl; // Ignore that android studio is highlighting these. Because Java is compiled, it can be a little dumb sometimes.
+    private Motor fl;
     private Motor bl;
     private Motor fr;
     private Motor br;
@@ -49,7 +49,7 @@ public class mecanumTeleOp extends OpMode
         // You WILL want to read through this class in the FTCLib docs or just by reading the
         // comments in the class. It's very confusing but you NEED to make sure you follow every
         // bit of it. Note: before running this OpMode you will need to calibrate the IMU with the
-        // calibration OpMode in the teamcode package.
+        // calibration OpMode in the root of the LearningBox package.
         imu = new RevIMU(hardwareMap);
         imu.init();
 
@@ -69,7 +69,11 @@ public class mecanumTeleOp extends OpMode
         Right bumper    - Squares inputs. This slows the robot down a lot. It allows for finer
                           control while driving in tight situations.
          */
-        mecanumDrive.driveFieldCentric(gamepad1.left_stick_x, gamepad1.left_stick_y, gamepad1.right_stick_x, imu.getHeading(), gamepad1.right_bumper);
+        mecanumDrive.driveFieldCentric(gamepad1.left_stick_x,
+                                        gamepad1.left_stick_y,
+                                        gamepad1.right_stick_x,
+                                        imu.getHeading(),
+                                        gamepad1.right_bumper);
         // For a POV drive, comment out that line ^^^ and uncomment line 81
         // If you are using POV drive, you won't need the IMU. You can delete all code pertaining to
         // it in this OpMode.
@@ -77,7 +81,7 @@ public class mecanumTeleOp extends OpMode
         Controls:
         Left stick      - Move the robot left, right, forward, backward, and any direction between.
         Right stick     - Make the robot spin/turn on the spot.
-        Right bumper    - Squares inputs. Slows it down. Dude at this point just look at the controls above idek understand why you're still here it's the same controls just with a different reference angle if youre SOOO worried about missing some super important information then youre barking up the wrong tree this is just a sprawling line of text that I thought was very funny that has no valuable information just turn around and go back now this is a fruitless endeavour you wont find any- the meaning of life is 43. there was a rounding issue they've been lying to you all along. DONT TRUST THEM THEYRE COMING FOR ME THEY KNOW I KNOW SEND HELP PLEASE THEYLL FIND YOU TOO THEYRE GONN-
+        Right bumper    - Squares inputs. Increases control sensitivity.
          */
         //mecanumDrive.driveRobotCentric(gamepad1.left_stick_x, gamepad1.left_stick_y, gamepad1.right_stick_x, gamepad1.right_bumper);
     }

@@ -1,4 +1,7 @@
 package org.firstinspires.ftc.teamcode.one0938LearningBox.learningToRobot;
+
+import com.qualcomm.robotcore.hardware.HardwareMap;
+
 /*
 FTC doesn't provide a class for a robot object. This means that most teams will just create the same
 robot parts over and over in every OpMode they make each season, and start over from scratch each
@@ -40,7 +43,7 @@ public class A_RobotClassBreakdown
      */
 
     // Our first subsystem is going to be our drivetrain. Navigate to the java file "Drivetrain"
-    Drivetrain drivetrain;
+    public Drivetrain drivetrain;
     /*
     You may have noticed that I didn't need to import the Drivetrain class in order to use it here.
     Because the Drivetrain class and this class ("A_RobotClassBreakdown") are both in the same
@@ -48,6 +51,29 @@ public class A_RobotClassBreakdown
      */
 
     //Up next is a sample robot arm. Navigate to the java file "Arm".
-    Arm arm;
+    public Arm arm;
+
+    /*
+    With two subsystems, you can now start building the constructor for your robot class. Here's the
+    simple constructor made for our sample subsystems:
+     */
+
+    /**Constructor for sample robot
+     * @param hardwareMap pass your OpMode's HardwareMap object
+     */
+    public A_RobotClassBreakdown(HardwareMap hardwareMap)
+    {
+        // In the constructor, we are going to initialise both of our subsystems
+        drivetrain  = new Drivetrain(hardwareMap);
+        arm         = new Arm(hardwareMap);
+    }
+    /*
+    Now we have a robot. We can now use this as a consistent interface to control our robot in each
+    OpMode, with any tweaks to the robot automatically applying across all programs.
+
+    Now, navigate the package called "learningSampleOpModes" and open the class
+    "teleOpRobotClassImplementation"
+     */
+
 
 }
