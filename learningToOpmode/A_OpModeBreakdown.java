@@ -167,3 +167,8 @@ public class A_OpModeBreakdown extends OpMode
 
 
 }
+
+/*
+Now that we've gone over the OpMode class, let's talk about linear OpModes and their associated
+class. Open the next java file "B_LinearOpModeBreakdown"
+ */

@@ -131,10 +131,11 @@ configuration settings.
 ### Where do I put my code?
 
 The fun part! Of course! Inside the TeamCode module, there are several folder-like structures called
-packages. These have dropdown boxes that you can click to show the contents of. The package that
-will contain your OpModes and modules is `java.org.firstinspires.ftc.teamcode` That's where this
-package goes. Download the one0938LearningBox package, extract its contents, and copy it to that
-destination. You can access the project files to find this directory by navigating to
+packages (this is a term you should be familiar with from Java). These have dropdown boxes that you 
+can click to show the contents of. The package that will contain your OpModes and modules is
+`java.org.firstinspires.ftc.teamcode` That's where this package goes. Download the
+one0938LearningBox package, extract its contents, and copy it to that destination. You can access
+the project files to find this directory by navigating to
 `*\TeamCode\src\main\java\org\firstinspires\ftc\teamcode` in your file manager. When you copy the 
 package into that folder, it should appear in Android Studio.
 
