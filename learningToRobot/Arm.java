@@ -97,6 +97,6 @@ public class Arm
     controlling any appendage that experiences external forces, but it is complicated for newer
     programmers, and requires calibration.
 
-    Now you can head back over to A_RobotClassBreakdown and continue from line 54.
+    Now you can head back over to A_RobotClassBreakdown and continue from line 57.
      */
 }

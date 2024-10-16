@@ -41,3 +41,10 @@ public class teleOpRobotClassImplementation extends OpMode
     pressing the B-button.
      */
 }
+
+/*
+This is the extent of what I have written for this tutorial as of release v0.1 of the One0938
+Learning Box. I will be adding more but I would recommend you practice by making another clone of
+the FtcRobotController and trying to make your own robot class and subsystems, as well as making
+some basic OpModes for it.
+ */

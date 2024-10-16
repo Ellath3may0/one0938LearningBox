@@ -117,7 +117,7 @@ public class B_LinearOpModeBreakdown extends LinearOpMode
         position in the real world. If you hold the IMU perfectly level, the motor's power would be
         set to 0, but if you pitched it slightly up and ran the OpMode, it would be set to its
         maximum power output. If you held the IMU upside down, it would set the motor's power to
-        half of its maximum. However, because it's not in a loop, this line will only exectue once,
+        half of its maximum. However, because it's not in a loop, this line will only execute once,
         so whatever the angle of the IMU is when you press start, determines the power of the motor
         for the whole program.
 
