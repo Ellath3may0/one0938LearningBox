@@ -142,5 +142,5 @@ package into that folder, it should appear in Android Studio.
 Note: When the package updates in Android Studio, it will begin to throw errors. Ignore this for
 now.
 
-Feel free to start looking through the learningToOpMode package where you'll start learning more
-about the inner-workings of programming your robots.
+To continue this tutorial, navigate to the package "learningToOpMode", and open the file 
+"A_OpModeBreakdown"
