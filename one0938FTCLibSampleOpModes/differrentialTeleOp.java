@@ -1,8 +1,6 @@
-package org.firstinspires.ftc.teamcode.one0938LearningBox.one0938SampleOpModes;
+package org.firstinspires.ftc.teamcode.one0938LearningBox.one0938FTCLibSampleOpModes;
 
 import com.arcrobotics.ftclib.drivebase.DifferentialDrive;
-import com.arcrobotics.ftclib.drivebase.MecanumDrive;
-import com.arcrobotics.ftclib.hardware.RevIMU;
 import com.arcrobotics.ftclib.hardware.motors.Motor;
 import com.arcrobotics.ftclib.hardware.motors.MotorGroup;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;

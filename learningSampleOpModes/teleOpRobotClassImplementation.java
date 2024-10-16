@@ -43,8 +43,9 @@ public class teleOpRobotClassImplementation extends OpMode
 }
 
 /*
-This is the extent of what I have written for this tutorial as of release v0.1 of the One0938
-Learning Box. I will be adding more but I would recommend you practice by making another clone of
-the FtcRobotController and trying to make your own robot class and subsystems, as well as making
-some basic OpModes for it.
+This is the end of the simple introductory programming tutorial. There are other sample OpModes in
+the package one0938VanillaSampleOpModes if you want more examples.
+
+To continue to the FTCLib portion of this tutorial, navigate to the package learningFTCLibRobotClass
+and open the FTCLib_RobotClassBreakdown file.
  */

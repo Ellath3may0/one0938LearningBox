@@ -44,8 +44,8 @@ public class Arm
     public void armPID(boolean toggle)
     {
         /*
-        This isn't itself a part of the PID calculation. It's just a toggle for the target position
-        of the arm
+        This switch isn't itself a part of the PID calculation. It's just a toggle for the target
+        position of the arm
          */
         switch(toggleState)
         {
@@ -77,17 +77,40 @@ public class Arm
                 break;
         }
 
+        /*
+        This code is for the PID controller. If you want more information about how a PID controller
+        works or more examples of implementation, visit CTRL + ALT + FTC's breakdown on the topic at
+        this link: https://www.ctrlaltftc.com/the-pid-controller
+         */
+        // motorPosition, error, and target are the three pieces of positional information that the
+        // PID controller uses to calculate an output.
         int motorPosition = arm.getCurrentPosition();
         int error = target - motorPosition;
 
+        // This is a very quick-and-dirty rate-of-change calculation of the time between the last
+        // loop execution of this method and the current. If you are unfamiliar with the idea of
+        // derivatives (calculus) you may want to familiarise yourself.
         double derivative = (error - lastError) / timer.seconds();
 
+        // The integralSum is the opposite of the last one, instead of being the rate of change, it
+        // represents the total change over time. This roughly equates to the current position of
+        // the arm, and is an approximate integral (calculus; familiarise yourself with the concept)
+        // of the function of your PID controller.
         integralSum += error * timer.seconds();
 
+        // Here is where all of our calculated values are brought together with our P, I, and D
+        // constants (which would need to be calibrated) to create the output power for the arm.
         double power = (Kp * error) + (Ki * integralSum) + (Kd * derivative);
+
+        // Once the power is calculated it gets applied to the motor
         arm.setPower(power);
 
+        // The persistent variable lastError is set to the current error value to be used in the
+        // next loop
         lastError = error;
+
+        // The timer is reset to be used in the next loop to show how much time has passed (used to
+        // calculate the derivative and the integral of the PID function)
         timer.reset();
     }
     /*
