@@ -47,5 +47,5 @@ This is the end of the simple introductory programming tutorial. There are other
 the package one0938VanillaSampleOpModes if you want more examples.
 
 To continue to the FTCLib portion of this tutorial, navigate to the package learningFTCLibRobotClass
-and open the FTCLib_RobotClassBreakdown file.
+and open the Robot file.
  */
